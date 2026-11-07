@@ -10,9 +10,9 @@
       "dish": "法式洋葱汤 French Onion Soup",
       "style": "art-deco-3d",
       "music": "1920s–30s symphonic jazz / Gershwin foxtrot",
-      "status": "in-progress-v2-subtitles-first",
+      "status": "in-progress-v3-recipe-card",
       "publish": false,
-      "notes": "v2: HUD contrast, cooking times, no cheese-pull copy; do not publish this round"
+      "notes": "v3: drop total-time on recipe card; YT step4 drop 240ml aside; do not publish"
     }
   ]
 }

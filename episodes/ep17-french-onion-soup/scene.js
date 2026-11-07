@@ -831,9 +831,9 @@ function safeRecipeCard(t, t0) {
   ctx.fillText('FULL RECIPE · 完整配方', W / 2, y + 52);
   K.title(ctx, TL.dish.zh, W / 2, y + 120, 72, T.a1, T.fontZh, { maxW: w - 80 });
   ctx.fillStyle = T.ink; K.fitText(ctx, TL.dish.en.toUpperCase(), W / 2, y + 168, 34, w - 80, T.fontEn, '700');
-  ctx.fillStyle = T.ink; K.fitText(ctx, `${TL.dish.time} · ${TL.dish.servings} 人份 · ${TL.dish.cuisine}`, W / 2, y + 208, 22, w - 80, T.fontUi, '600');
-  ctx.fillStyle = T.a1; K.fitText(ctx, '动画已浓缩，非实际烹饪时长', W / 2, y + 236, 20, w - 80, T.fontZh, '700');
-  let yy = y + 270; ctx.textAlign = 'left';
+  ctx.fillStyle = T.ink; K.fitText(ctx, `${TL.dish.servings} 人份 · ${TL.dish.cuisine}`, W / 2, y + 208, 24, w - 80, T.fontUi, '600');
+  ctx.fillStyle = T.a1; K.fitText(ctx, '动画已浓缩，非实际烹饪时长', W / 2, y + 240, 22, w - 80, T.fontZh, '700');
+  let yy = y + 274; ctx.textAlign = 'left';
   ctx.fillStyle = T.a3; ctx.font = `900 28px ${T.fontZh}`; ctx.fillText('食材  INGREDIENTS', x + 36, yy); yy += 10;
   R.ingredients.forEach((r, i) => {
     const ry = yy + 16 + i * 44;
@@ -848,15 +848,34 @@ function safeRecipeCard(t, t0) {
   });
   ctx.globalAlpha = a; yy += 16 + R.ingredients.length * 44 + 16;
   ctx.fillStyle = T.a3; ctx.font = `900 28px ${T.fontZh}`; ctx.fillText('步骤  STEPS', x + 36, yy); yy += 8;
-  R.steps.forEach((s, i) => {
-    const ry = yy + 12 + i * 70;
+  const stepBlocks = R.steps.map((s, i) => {
+    if (i !== 4) return { n: i + 1, lines: [[s[0], s[1]]] };
+    return {
+      n: 5,
+      lines: [
+        ['法棍205°C烤10分钟，与芝士broil分开', 'Toast baguette 205°C/10 min, separate from broil'],
+        ['Broiler-safe汤盅放烤盘，距热源约15cm', 'Broiler-safe crocks on tray, ~15cm from heat'],
+        ['上火3–5分钟至冒泡焦黄，全程观察', 'Broil 3–5 min until bubbly-brown; watch closely'],
+        ['戴手套取出，稍冷再食', 'Gloves off the tray; cool slightly, then eat']
+      ]
+    };
+  });
+  let ry = yy + 10;
+  stepBlocks.forEach((blk, i) => {
+    const blockH = 28 + blk.lines.length * 52;
     const ri = eo(seg(t, t0 + 0.8 + i * 0.07, t0 + 1.1 + i * 0.07));
     ctx.globalAlpha = a * ri;
     ctx.fillStyle = T.a1; ctx.beginPath(); ctx.arc(x + 58, ry + 22, 18, 0, TAU); ctx.fill();
-    ctx.fillStyle = T.paper; ctx.font = `700 18px ${T.fontEn}`; ctx.textAlign = 'center'; ctx.fillText(String(i + 1), x + 58, ry + 28);
-    ctx.textAlign = 'left'; ctx.fillStyle = T.ink;
-    K.fitText(ctx, s[0], x + 92, ry + 18, 22, w - 140, T.fontZh, '700');
-    ctx.fillStyle = T.muted; K.fitText(ctx, s[1], x + 92, ry + 44, 18, w - 140, T.fontUi, '500');
+    ctx.fillStyle = T.paper; ctx.font = `700 18px ${T.fontEn}`; ctx.textAlign = 'center'; ctx.fillText(String(blk.n), x + 58, ry + 28);
+    ctx.textAlign = 'left';
+    blk.lines.forEach((ln, li) => {
+      const ly = ry + li * 52;
+      ctx.fillStyle = T.ink;
+      K.fitText(ctx, ln[0], x + 92, ly + 20, li === 0 ? 24 : 22, w - 140, T.fontZh, '700');
+      ctx.fillStyle = T.muted;
+      K.fitText(ctx, ln[1], x + 92, ly + 44, 18, w - 140, T.fontUi, '500');
+    });
+    ry += blockH + 8;
   });
   ctx.restore();
 }
@@ -880,7 +899,7 @@ function overlay(t) {
     K.fitText(ctx, '慢炒焦糖洋葱 + 焗芝士', W / 2, 596, 28, W - 320, T.fontZh, '800');
     decoPanel(ctx, 160, 630, W - 320, 44, 16);
     ctx.fillStyle = T.ink;
-    K.fitText(ctx, `${TL.dish.time} · ${TL.dish.servings} 人份 · 动画已浓缩非实际时长`, W / 2, 660, 22, W - 360, T.fontUi, '700');
+    K.fitText(ctx, `${TL.dish.servings} 人份 · 动画已浓缩非实际时长`, W / 2, 660, 22, W - 360, T.fontUi, '700');
     ctx.restore();
   }
   // symmetric arch wipe between beats
