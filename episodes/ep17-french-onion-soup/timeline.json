@@ -1,0 +1,81 @@
+{
+  "episode": 17,
+  "slug": "ep17-french-onion-soup",
+  "dish": {
+    "zh": "法式洋葱汤",
+    "en": "French Onion Soup",
+    "cuisine": "法式 French",
+    "servings": "4",
+    "note": "动画已浓缩，非实际烹饪时长"
+  },
+  "style": {
+    "visual": "art-deco-3d (Three.js warm lacquer black + gold banded metal + airbrushed hard-edged volumes, sunburst/stepped-arch motifs; lemo-opuscar art-deco; true 3D volume kitchen diorama, no flat 2D cheat)",
+    "music": "1920s–30s symphonic jazz / Gershwin foxtrot (~100 BPM: clarinet + muted trumpet + stride piano fragments + walking pizz bass + brushes; NOT afrobeat/lo-fi/funk/UI ding/toy-piano/marimba/Rhodes/indie-pop jangle/Mediterranean acoustic)"
+  },
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 115.0,
+  "steps": [
+    { "n": 1, "zh": "切洋葱", "en": "Slice the onions", "start": 4.0, "end": 18.0 },
+    { "n": 2, "zh": "热锅化黄油", "en": "Melt butter in pot", "start": 18.0, "end": 32.0 },
+    { "n": 3, "zh": "慢炒45–55分钟至焦糖色", "en": "Caramelize 45–55 min (film sped up)", "start": 32.0, "end": 55.0 },
+    { "n": 4, "zh": "干白收近干·高汤小火30分钟", "en": "Reduce wine; simmer broth 30 min", "start": 55.0, "end": 78.0 },
+    { "n": 5, "zh": "烤法棍再焗芝士3–5分钟", "en": "Toast baguette; broil cheese 3–5 min", "start": 78.0, "end": 98.0 },
+    { "n": 6, "zh": "稍冷后上桌", "en": "Cool slightly, then serve", "start": 98.0, "end": 105.0 }
+  ],
+  "callouts": [
+    { "t0": 4.5, "t1": 10.0, "zh": "黄洋葱", "en": "Yellow onions", "amt": "3 个 · 3 pcs", "kind": "ing", "color": "#8B4518" },
+    { "t0": 11.0, "t1": 16.5, "zh": "立刀切片见厚度", "en": "Blade upright, see thickness", "amt": "", "kind": "act" },
+    { "t0": 18.5, "t1": 24.0, "zh": "无盐黄油", "en": "Unsalted butter", "amt": "40 g · 40 g", "kind": "ing", "color": "#8A6A12" },
+    { "t0": 25.0, "t1": 31.0, "zh": "先化黄油再下洋葱", "en": "Butter first, then onions", "amt": "", "kind": "act" },
+    { "t0": 32.5, "t1": 38.0, "zh": "洋葱入锅", "en": "Onions into pot", "amt": "", "kind": "act" },
+    { "t0": 39.0, "t1": 45.0, "zh": "盐与黑胡椒", "en": "Salt & black pepper", "amt": "适量 · to taste", "kind": "ing", "color": "#3A3530" },
+    { "t0": 46.0, "t1": 54.0, "zh": "慢炒45–55分钟至深金黄软糯", "en": "45–55 min to deep gold (sped up)", "amt": "", "kind": "act" },
+    { "t0": 55.5, "t1": 61.0, "zh": "干白葡萄酒", "en": "Dry white wine", "amt": "60 ml · 60 ml", "kind": "ing", "color": "#5C4A20" },
+    { "t0": 62.0, "t1": 68.0, "zh": "刮底收至近干（以终点为准）", "en": "Scrape fond; reduce nearly dry", "amt": "", "kind": "act" },
+    { "t0": 69.0, "t1": 76.0, "zh": "牛肉高汤", "en": "Beef broth", "amt": "800 ml · 800 ml", "kind": "ing", "color": "#8B1E3F" },
+    { "t0": 78.5, "t1": 84.0, "zh": "法棍片 205°C烤10分钟", "en": "Baguette 205°C / 10 min", "amt": "4 片 · 4 slices", "kind": "ing", "color": "#8B5A12" },
+    { "t0": 85.0, "t1": 91.0, "zh": "格吕耶尔芝士", "en": "Gruyère cheese", "amt": "120 g · 120 g", "kind": "ing", "color": "#8A6A14" },
+    { "t0": 92.0, "t1": 97.0, "zh": "上火broil 3–5分钟至冒泡焦黄", "en": "Broil 3–5 min, watch closely", "amt": "", "kind": "act" },
+    { "t0": 98.5, "t1": 103.5, "zh": "新鲜百里香", "en": "Fresh thyme", "amt": "少许 · pinch", "kind": "ing", "color": "#0F6B4C" }
+  ],
+  "ev": {
+    "pot_in": 1.2,
+    "board_in": 3.5,
+    "onion_cut": { "start": 5.0, "gap": 0.55, "count": 8, "stroke": 0.35 },
+    "butter": { "enter": 19.0, "pour": [20.5, 27.0], "exit": 30.5 },
+    "onion_drop": { "start": 32.5, "gap": 0.12, "count": 18, "fall": 0.28 },
+    "stir1": [36.0, 54.0],
+    "salt": { "start": 40.0, "gap": 0.07, "count": 12, "fall": 0.2 },
+    "wine": { "enter": 56.0, "pour": [57.5, 63.5], "exit": 66.0 },
+    "broth": { "enter": 67.0, "pour": [68.5, 75.5], "exit": 77.5 },
+    "ladle": [78.5, 84.0],
+    "baguette": { "start": 84.5, "gap": 0.4, "count": 4, "fall": 0.32 },
+    "cheese": { "start": 88.0, "gap": 0.15, "count": 10, "fall": 0.26 },
+    "broil": [91.0, 97.0],
+    "thyme": { "start": 98.5, "gap": 0.1, "count": 8, "fall": 0.22 },
+    "hero": 100.0,
+    "done": 102.0,
+    "card": 105.0
+  },
+  "recipe": {
+    "ingredients": [
+      ["黄洋葱", "Yellow onions", "3 个"],
+      ["无盐黄油", "Unsalted butter", "40 g"],
+      ["干白葡萄酒", "Dry white wine", "60 ml"],
+      ["牛肉高汤", "Beef broth", "800 ml"],
+      ["法棍片", "Baguette slices", "4 片"],
+      ["格吕耶尔芝士", "Gruyère cheese", "120 g"],
+      ["盐与黑胡椒", "Salt & pepper", "适量"],
+      ["新鲜百里香", "Fresh thyme", "少许"]
+    ],
+    "steps": [
+      ["立刀将洋葱切成均匀薄片", "Slice onions upright into even rounds"],
+      ["空锅融化黄油成薄油层，再下洋葱", "Melt butter to a thin film, then add onions"],
+      ["慢炒45–55分钟至深金黄软糯；太快上色则降火或加水。动画已浓缩。", "Slow 45–55 min to deep gold; lower heat or splash water if too fast. Film sped up."],
+      ["60ml干白刮底收至近干（以终点为准）；高汤煮开后小火30分钟", "Deglaze 60ml wine; reduce nearly dry (by endpoint). Simmer broth 30 min."],
+      ["法棍205°C烤10分钟后，broiler-safe汤盅距热源约15cm焗3–5分钟至冒泡焦黄；戴手套稍冷再食", "Toast baguette 205°C/10 min; broil ~15cm 3–5 min to bubbly-brown. Gloves; cool slightly."]
+    ]
+  }
+}
