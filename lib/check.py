@@ -80,9 +80,9 @@ wav = os.path.join(QA, 'audio.wav')
 run(['ffmpeg','-y','-i', OUT, '-vn', '-ac','2','-ar','48000', wav])
 try:
     import wave, numpy as np
-    with wave.open(wav, 'rb') as w:
-        n, ch, sw, sr = w.getnframes(), w.getnchannels(), w.getsampwidth(), w.getframerate()
-        raw = w.readframes(n)
+    with wave.open(wav, 'rb') as wf:
+        n = wf.getnframes()
+        raw = wf.readframes(n)
         x = np.frombuffer(raw, dtype='<i2').astype(np.float64) / 32768.0
         peak = float(np.max(np.abs(x)))
         clip_frac = float(np.mean(np.abs(x) > 0.99))
@@ -104,7 +104,7 @@ frame_paths = []
 for t in times:
     if t >= TL['duration']:
         continue
-    fp = os.path.join(frame_dir, f"t{t:05.2f}.jpg".replace('.', 'p'))
+    fp = os.path.join(frame_dir, f"t{t:.2f}".replace('.', 'p') + '.jpg')
     r = run(['ffmpeg','-y','-ss', f'{t:.3f}', '-i', OUT, '-frames:v','1', '-q:v','2', fp])
     if os.path.exists(fp):
         frame_paths.append(fp)
@@ -135,7 +135,7 @@ try:
         arr = np.frombuffer(data, dtype=np.uint8)
         return arr.reshape(TL['height'], TL['width'], 3)
     for t, tag in [(21.0,'butter'), (42.0,'salt'), (59.0,'wine')]:
-        fp = os.path.join(frame_dir, f"t{t:05.2f}.jpg".replace('.', 'p'))
+        fp = os.path.join(frame_dir, f"t{t:.2f}".replace('.', 'p') + '.jpg')
         if not os.path.exists(fp):
             continue
         im = load_jpg_via_ffmpeg(fp)

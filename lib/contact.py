@@ -16,10 +16,13 @@ def contact(paths, out, cols=3):
         ins = []
         for i, p in enumerate(pad):
             ins += ['-i', p]
-        layout = '|'.join(
-            f"{c}_{r}" for r in range(rows) for c in range(cols)
-        )
-        # xstack needs labeled pads
+        cells = []
+        for r in range(rows):
+            for c in range(cols):
+                xs = '+'.join(['w0'] * c) if c else '0'
+                ys = '+'.join(['h0'] * r) if r else '0'
+                cells.append(f'{xs}_{ys}')
+        layout = '|'.join(cells)
         splits = ''.join(f'[{i}:v]scale=360:640,setsar=1[v{i}];' for i in range(len(pad)))
         inputs = ''.join(f'[v{i}]' for i in range(len(pad)))
         filt = splits + f"{inputs}xstack=inputs={len(pad)}:layout={layout}[out]"
