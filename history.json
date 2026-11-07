@@ -1,0 +1,18 @@
+{
+  "rotation": {
+    "material": ["clay", "low-poly", "toon-outline", "neon", "paper-craft", "realistic", "felt", "glass", "voxel", "art-deco-3d"],
+    "music_styles": ["lo-fi", "funk", "indie-pop", "mediterranean", "afrobeat", "bossa", "symphonic-jazz-foxtrot"]
+  },
+  "episodes": [
+    {
+      "n": 17,
+      "slug": "ep17-french-onion-soup",
+      "dish": "法式洋葱汤 French Onion Soup",
+      "style": "art-deco-3d",
+      "music": "1920s–30s symphonic jazz / Gershwin foxtrot",
+      "status": "in-progress-v2-subtitles-first",
+      "publish": false,
+      "notes": "v2: HUD contrast, cooking times, no cheese-pull copy; do not publish this round"
+    }
+  ]
+}
