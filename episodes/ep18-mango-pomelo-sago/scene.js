@@ -1192,4 +1192,15 @@ window.render = function (t) {
   overlay(t);
   window.__dbg = JSON.parse(JSON.stringify(DBG));
 };
-(async () => { await K.loadFonts(); render(0); window.ready = true; })();
+(async () => {
+  let done = false;
+  const go = () => {
+    if (done) return;
+    done = true;
+    window.ready = true;
+    try { render(0); } catch (e) { console.error(e); }
+  };
+  setTimeout(go, 6000);
+  try { await Promise.race([K.loadFonts(), new Promise(r => setTimeout(r, 5000))]); } catch (e) { }
+  go();
+})();

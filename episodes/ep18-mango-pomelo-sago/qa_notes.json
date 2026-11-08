@@ -1,0 +1,36 @@
+{
+  "episode": "ep18-mango-pomelo-sago",
+  "round": "v2-review-1-fixes",
+  "do_not_publish": true,
+  "automatic_qa_is_not_review_pass": true,
+  "automatic": {
+    "file": "/workspace/ep18-mango-pomelo-sago.mp4",
+    "store": "/cursor/stores/self/ep18-mango-pomelo-sago-v2.mp4",
+    "w": 1080,
+    "h": 1920,
+    "fps": 30,
+    "duration_s": 115.0,
+    "codec": "h264+aac yuv420p faststart",
+    "integrated_LUFS": -13.9,
+    "true_peak_dBTP": -2.5,
+    "fails": [],
+    "pass_automatic": true,
+    "sync_checked": 0,
+    "sync_note": "check.py only onsets a fixed disc cue-name list; this episode's foley names are not in that list. SFX are locked to timeline.json ev times."
+  },
+  "manual_visual": {
+    "sago_cook": "stir → lift check (hard white cores) → lid cover → rinse/drain; HUD phases STIR/CHECK/COVER/RINSE; copy is package+stir / hard-core cover / then rinse. No 10–15 min cutoff.",
+    "mango": "cheeks are thick yellow flesh with no brown pit cross-section; complete pit sits in the centre on the board; knife beside pit; score on flesh, not through skin.",
+    "sugar": "rock sugar drops into pitcher mouth with 冰糖先溶冷却, then coconut/evap.",
+    "milk": "stream starts at pitcher spout and grows into the glass on a short arc.",
+    "card": "no 20 min / no total cook time; steps match YouTube/TikTok copy."
+  },
+  "residuals": [
+    "High camera still shows the pit as a flat oval seed on the board rather than a strongly 3D almond; cheeks themselves have no pit slice.",
+    "Milk column is 12 cylinder segments (slightly faceted), not a continuous spline.",
+    "Automatic sync checked 0 named disc cues; do not treat pass_automatic as 审核通过.",
+    "Chrome logs a 404 during render (likely favicon); frames still wrote.",
+    "Some cooked pearls keep a tiny soft white dot by design (not a hard core)."
+  ],
+  "reference": "https://www.kawalingpinoy.com/how-to-cook-sago/ — mini/small pearls: boil uncovered while stirring, then cover/stand until translucent, then cold-rinse and drain. Not large-pearl multi-boil times."
+}
