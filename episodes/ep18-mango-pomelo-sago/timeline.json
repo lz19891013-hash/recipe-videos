@@ -1,0 +1,366 @@
+{
+  "episode": 18,
+  "slug": "ep18-mango-pomelo-sago",
+  "dish": {
+    "zh": "港式杨枝甘露",
+    "en": "Mango Pomelo Sago",
+    "cuisine": "港式甜品 Hong Kong dessert",
+    "servings": "2",
+    "note": "动画已浓缩，非实际烹饪时长"
+  },
+  "style": {
+    "visual": "impasto-3d (Three.js palette-knife thick-paint materials: visible knife-ridge bump/normal, opaque pigment, broken neighbouring colour drags, occasional wet specular; raking warm light / cool shadow; lemo-opuscar impasto translated to true 3D volume kitchen, no 2D brush engine, no Van Gogh swirl filter)",
+    "music": "sunny indoor studio pastorale (~94 BPM, G major: harp arpeggios + pizzicato strings + clarinet/woodwind + light finger-bell fragments + soft shaker; NOT afrobeat/lo-fi/funk/UI ding/toy-piano/marimba/Rhodes/indie-pop jangle/Mediterranean nylon+oud/riq/Gershwin foxtrot/chiptune)"
+  },
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 115.0,
+  "steps": [
+    {
+      "n": 1,
+      "zh": "空锅煮西米",
+      "en": "Boil the sago",
+      "start": 4.0,
+      "end": 24.0
+    },
+    {
+      "n": 2,
+      "zh": "立刀切芒果",
+      "en": "Dice the mango",
+      "start": 24.0,
+      "end": 46.0
+    },
+    {
+      "n": 3,
+      "zh": "手拆柚子",
+      "en": "Pull pomelo pulp",
+      "start": 46.0,
+      "end": 58.0
+    },
+    {
+      "n": 4,
+      "zh": "调椰浆奶液",
+      "en": "Mix the coconut milk",
+      "start": 58.0,
+      "end": 74.0
+    },
+    {
+      "n": 5,
+      "zh": "装入杯中",
+      "en": "Assemble the glass",
+      "start": 74.0,
+      "end": 96.0
+    },
+    {
+      "n": 6,
+      "zh": "成品上桌",
+      "en": "Serve chilled",
+      "start": 96.0,
+      "end": 105.0
+    }
+  ],
+  "callouts": [
+    {
+      "t0": 4.5,
+      "t1": 10.0,
+      "zh": "清水",
+      "en": "Water",
+      "amt": "适量 · as needed",
+      "kind": "ing",
+      "color": "#A8C4D4"
+    },
+    {
+      "t0": 11.0,
+      "t1": 15.6,
+      "zh": "小西米",
+      "en": "Small sago pearls",
+      "amt": "50 g · 50 g",
+      "kind": "ing",
+      "color": "#F5F0E6"
+    },
+    {
+      "t0": 15.8,
+      "t1": 18.5,
+      "zh": "按包装煮并搅拌",
+      "en": "Cook per package; keep stirring",
+      "amt": "",
+      "kind": "act"
+    },
+    {
+      "t0": 18.6,
+      "t1": 21.7,
+      "zh": "仍有硬白芯则盖焖或续煮",
+      "en": "Hard white cores: cover or keep cooking",
+      "amt": "",
+      "kind": "act"
+    },
+    {
+      "t0": 21.8,
+      "t1": 23.8,
+      "zh": "无硬芯后再过冷水沥干",
+      "en": "No hard cores, then rinse & drain",
+      "amt": "",
+      "kind": "act"
+    },
+    {
+      "t0": 24.5,
+      "t1": 30.0,
+      "zh": "熟芒果",
+      "en": "Ripe mangoes",
+      "amt": "2 个 · ~400 g",
+      "kind": "ing",
+      "color": "#E8922A"
+    },
+    {
+      "t0": 30.5,
+      "t1": 36.5,
+      "zh": "沿扁核两侧切颊见肉",
+      "en": "Cut cheeks beside the flat pit",
+      "amt": "",
+      "kind": "act"
+    },
+    {
+      "t0": 37.0,
+      "t1": 44.5,
+      "zh": "划格不切穿皮 · 切丁",
+      "en": "Score, don't cut the skin; dice",
+      "amt": "",
+      "kind": "act"
+    },
+    {
+      "t0": 46.5,
+      "t1": 52.0,
+      "zh": "柚子囊瓣",
+      "en": "Pomelo pulp",
+      "amt": "80 g · 80 g",
+      "kind": "ing",
+      "color": "#F2A3A0"
+    },
+    {
+      "t0": 52.5,
+      "t1": 57.5,
+      "zh": "手拆粉黄丝瓣",
+      "en": "Pull pink-gold sacs",
+      "amt": "",
+      "kind": "act"
+    },
+    {
+      "t0": 58.5,
+      "t1": 64.0,
+      "zh": "冰糖先溶冷却",
+      "en": "Dissolve rock sugar; cool first",
+      "amt": "30 g · 30 g",
+      "kind": "ing",
+      "color": "#F3E6B0"
+    },
+    {
+      "t0": 64.5,
+      "t1": 69.5,
+      "zh": "椰浆",
+      "en": "Coconut milk",
+      "amt": "200 ml · 200 ml",
+      "kind": "ing",
+      "color": "#F7E8C8"
+    },
+    {
+      "t0": 70.0,
+      "t1": 73.5,
+      "zh": "淡奶",
+      "en": "Evaporated milk",
+      "amt": "50 ml · 50 ml",
+      "kind": "ing",
+      "color": "#F4E6C8"
+    },
+    {
+      "t0": 74.5,
+      "t1": 80.0,
+      "zh": "先铺西米珠",
+      "en": "Sago pearls first",
+      "amt": "",
+      "kind": "act"
+    },
+    {
+      "t0": 80.5,
+      "t1": 86.0,
+      "zh": "再铺芒果丁",
+      "en": "Then mango cubes",
+      "amt": "",
+      "kind": "act"
+    },
+    {
+      "t0": 86.5,
+      "t1": 92.0,
+      "zh": "柚子与奶液",
+      "en": "Pomelo and milk",
+      "amt": "",
+      "kind": "act"
+    },
+    {
+      "t0": 92.5,
+      "t1": 95.5,
+      "zh": "顶部再堆水果",
+      "en": "Crown with fruit",
+      "amt": "",
+      "kind": "act"
+    },
+    {
+      "t0": 96.5,
+      "t1": 103.5,
+      "zh": "冰块",
+      "en": "Ice cubes",
+      "amt": "少许 · a few",
+      "kind": "ing",
+      "color": "#D6EEF5"
+    }
+  ],
+  "ev": {
+    "pot_in": 1.2,
+    "glass_in": 1.6,
+    "board_in": 2.4,
+    "water": {
+      "enter": 5.0,
+      "pour": [6.0, 11.4],
+      "exit": 13.0
+    },
+    "sago": {
+      "start": 13.8,
+      "gap": 0.05,
+      "count": 40,
+      "fall": 0.32
+    },
+    "cook": [15.8, 21.9],
+    "stir": {
+      "start": 15.85,
+      "end": 18.55
+    },
+    "check": {
+      "start": 18.55,
+      "end": 19.55
+    },
+    "lid": {
+      "on": 19.55,
+      "off": 21.85
+    },
+    "rinse": {
+      "enter": 22.05,
+      "pour": [22.35, 23.45],
+      "exit": 23.9
+    },
+    "mango_in": 24.8,
+    "cheek_cuts": [27.2, 31.6],
+    "pit_reveal": 32.3,
+    "score": {
+      "start": 33.6,
+      "gap": 0.22,
+      "count": 10
+    },
+    "dice": {
+      "start": 37.6,
+      "gap": 0.16,
+      "count": 14
+    },
+    "pomelo_in": 46.8,
+    "pomelo_pull": {
+      "start": 48.4,
+      "gap": 0.35,
+      "count": 10,
+      "fall": 0.28
+    },
+    "pitcher_in": 58.2,
+    "sugar": {
+      "start": 58.7,
+      "gap": 0.16,
+      "count": 8,
+      "fall": 0.42
+    },
+    "sugar_dissolve": [59.6, 63.2],
+    "sugar_cool": [63.0, 65.4],
+    "coco": {
+      "enter": 64.8,
+      "pour": [65.6, 69.4],
+      "exit": 70.6
+    },
+    "evap": {
+      "enter": 69.8,
+      "pour": [70.4, 73.0],
+      "exit": 73.8
+    },
+    "sago_to_glass": {
+      "start": 75.0,
+      "gap": 0.04,
+      "count": 40,
+      "fly": 0.36
+    },
+    "mango_to_glass": {
+      "start": 80.6,
+      "gap": 0.12,
+      "count": 10,
+      "fly": 0.32
+    },
+    "pomelo_to_glass": {
+      "start": 84.6,
+      "gap": 0.18,
+      "count": 8,
+      "fly": 0.3
+    },
+    "milk_pour": {
+      "enter": 87.2,
+      "pour": [88.2, 93.0],
+      "exit": 94.8
+    },
+    "topping": {
+      "start": 93.6,
+      "gap": 0.18,
+      "count": 6,
+      "fly": 0.28
+    },
+    "ice": {
+      "start": 97.0,
+      "gap": 0.25,
+      "count": 3,
+      "fall": 0.3
+    },
+    "hero": 99.2,
+    "done": 101.2,
+    "card": 105.0
+  },
+  "recipe": {
+    "ingredients": [
+      ["熟芒果", "Ripe mangoes", "2 个 · ~400 g"],
+      ["小西米", "Sago pearls", "50 g"],
+      ["椰浆", "Coconut milk", "200 ml"],
+      ["淡奶", "Evaporated milk", "50 ml"],
+      ["柚子囊瓣", "Pomelo pulp", "80 g"],
+      ["冰糖", "Rock sugar", "30 g"],
+      ["清水", "Water", "适量"],
+      ["冰块", "Ice", "少许"]
+    ],
+    "steps": [
+      [
+        "按包装煮并搅拌；仍有硬白芯则盖焖或续煮至无硬芯，再过冷水沥干",
+        "Cook per package, stirring; if hard white cores remain, cover or keep cooking until gone, then rinse & drain"
+      ],
+      [
+        "沿扁核两侧平行切取果颊，厚黄肉无核；划格不切穿皮后切丁",
+        "Cut cheeks parallel to the flat pit; thick yellow flesh, no pit in cheeks; score without cutting the skin"
+      ],
+      [
+        "手拆柚子，拆出粉黄囊瓣",
+        "Pull pink-gold pomelo sacs by hand"
+      ],
+      [
+        "冰糖先溶化并放凉，再调入椰浆与淡奶",
+        "Dissolve rock sugar and cool, then mix coconut and evaporated milk"
+      ],
+      [
+        "杯中依次放入西米、芒果丁、柚子，倒入奶液，顶部再堆水果",
+        "Layer sago, mango and pomelo; pour the milk; crown with fruit"
+      ],
+      [
+        "加少许冰块即可享用",
+        "Add a few ice cubes and serve"
+      ]
+    ]
+  }
+}

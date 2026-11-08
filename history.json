@@ -1,0 +1,27 @@
+{
+  "rotation": {
+    "material": ["clay", "low-poly", "toon-outline", "neon", "paper-craft", "realistic", "felt", "glass", "voxel", "art-deco-3d", "impasto-3d"],
+    "music_styles": ["lo-fi", "funk", "indie-pop", "mediterranean", "afrobeat", "bossa", "symphonic-jazz-foxtrot", "sunny-indoor-studio-pastorale"]
+  },
+  "episodes": [
+    {
+      "n": 17,
+      "slug": "ep17-french-onion-soup",
+      "dish": "法式洋葱汤 French Onion Soup",
+      "style": "art-deco-3d",
+      "music": "1920s–30s symphonic jazz / Gershwin foxtrot",
+      "status": "in-progress-v3-recipe-card",
+      "publish": false
+    },
+    {
+      "n": 18,
+      "slug": "ep18-mango-pomelo-sago",
+      "dish": "港式杨枝甘露 Mango Pomelo Sago",
+      "style": "impasto-3d",
+      "music": "sunny indoor studio pastorale (~94 BPM, G major)",
+      "status": "in-progress-v2-round1-fixes",
+      "publish": false,
+      "notes": "v2 第1轮退改：小西米按包装煮+搅拌+硬白芯盖焖/续煮再过冷水沥干；芒果沿扁核两侧切颊无核截面；壶嘴短弧液柱；冰糖先溶冷却再调奶；删20min总耗时。不发布。"
+    }
+  ]
+}
