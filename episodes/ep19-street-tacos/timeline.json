@@ -1,0 +1,86 @@
+{
+  "episode": 19,
+  "slug": "ep19-street-tacos",
+  "dish": {
+    "zh": "墨西哥街头玉米卷",
+    "en": "Mexican Street Tacos",
+    "cuisine": "墨西哥 Mexican",
+    "time": "25 min",
+    "servings": "3"
+  },
+  "style": {
+    "visual": "silkscreen-poster-3d (Three.js opaque flat-ink facets + soft cream paper stock, stepped-band skies, slight misregister edges; lemo-opuscar silkscreen-poster; true 3D volume kitchen diorama, no 2D Path2D cheat, no gradients)",
+    "music": "Latin cumbia street band (~100 BPM: warm electric bass ostinato + nylon syncopated rhythm + soft güiro/shaker + muted brass stabs + light kick; NOT afrobeat/lo-fi/funk UI ding/toy-piano/marimba/Rhodes/indie-pop jangle/Mediterranean nylon+oud/riq/Gershwin foxtrot/sunny pastorale/chiptune)"
+  },
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 110.0,
+  "steps": [
+    { "n": 1, "zh": "空盘加热", "en": "Heat the empty comal", "start": 4.0, "end": 14.0 },
+    { "n": 2, "zh": "热油煸牛肉", "en": "Oil · sear beef", "start": 14.0, "end": 38.0 },
+    { "n": 3, "zh": "玉米饼翻热", "en": "Warm tortillas", "start": 38.0, "end": 52.0 },
+    { "n": 4, "zh": "切洋葱香菜青柠", "en": "Chop onion · cilantro · lime", "start": 52.0, "end": 70.0 },
+    { "n": 5, "zh": "装盘淋酱挤柠", "en": "Assemble · salsa · lime", "start": 70.0, "end": 94.0 },
+    { "n": 6, "zh": "街头卷上桌", "en": "Street tacos ready", "start": 94.0, "end": 102.0 }
+  ],
+  "callouts": [
+    { "t0": 4.5, "t1": 9.5, "zh": "铸铁烤盘", "en": "Cast-iron comal", "amt": "中火 · med heat", "kind": "ing", "color": "#1E2A32" },
+    { "t0": 10.0, "t1": 13.5, "zh": "先空盘加热", "en": "Heat empty first", "amt": "", "kind": "act" },
+    { "t0": 14.5, "t1": 19.0, "zh": "食用油", "en": "Cooking oil", "amt": "1 tbsp · 15 ml", "kind": "ing", "color": "#E8B84A" },
+    { "t0": 19.5, "t1": 24.0, "zh": "先热油再下肉", "en": "Oil first — then beef", "amt": "", "kind": "act" },
+    { "t0": 24.5, "t1": 30.0, "zh": "牛肉条", "en": "Beef strips", "amt": "300 g · 10 oz", "kind": "ing", "color": "#C45C3A" },
+    { "t0": 30.5, "t1": 37.0, "zh": "煸至焦香", "en": "Sear until browned", "amt": "约 4–5 min", "kind": "act" },
+    { "t0": 38.5, "t1": 44.0, "zh": "玉米饼", "en": "Corn tortillas", "amt": "6 张 · 6 pcs", "kind": "ing", "color": "#E8B84A" },
+    { "t0": 44.5, "t1": 51.0, "zh": "两面翻热", "en": "Flip both sides", "amt": "各 20–30 s", "kind": "act" },
+    { "t0": 52.5, "t1": 57.5, "zh": "白洋葱", "en": "White onion", "amt": "1/2 个 · ½", "kind": "ing", "color": "#F4E8D0" },
+    { "t0": 58.0, "t1": 63.0, "zh": "香菜", "en": "Cilantro", "amt": "一小把 · handful", "kind": "ing", "color": "#7CB342" },
+    { "t0": 63.5, "t1": 69.0, "zh": "青柠横切见肉", "en": "Lime — show flesh", "amt": "2 个 · 2 limes", "kind": "ing", "color": "#7CB342" },
+    { "t0": 70.5, "t1": 76.0, "zh": "饼上铺牛肉", "en": "Tortilla · beef", "amt": "", "kind": "act" },
+    { "t0": 76.5, "t1": 81.5, "zh": "洋葱香菜", "en": "Onion & cilantro", "amt": "", "kind": "act" },
+    { "t0": 82.0, "t1": 87.5, "zh": "萨尔萨酱", "en": "Salsa", "amt": "3 tbsp · 3 tbsp", "kind": "ing", "color": "#C45C3A" },
+    { "t0": 88.0, "t1": 93.0, "zh": "挤青柠汁", "en": "Squeeze lime", "amt": "", "kind": "act" },
+    { "t0": 94.5, "t1": 100.5, "zh": "一张饼一卷香", "en": "One wrap, whole street", "amt": "", "kind": "act" }
+  ],
+  "ev": {
+    "ignite": 5.0,
+    "comal_heat": [5.0, 13.5],
+    "oil": { "enter": 15.0, "pour": [16.0, 20.5], "exit": 22.5 },
+    "beef_drop": { "start": 23.0, "gap": 0.07, "count": 28, "fall": 0.32 },
+    "stir1": [26.0, 37.0],
+    "tortilla_on": 39.0,
+    "tortilla_flip": [42.5, 46.5, 49.5],
+    "onion_chops": [53.5, 54.0, 54.5, 55.0, 55.5, 56.0, 56.5, 57.0],
+    "cilantro_chops": [58.5, 59.0, 59.5, 60.0, 60.5, 61.0],
+    "lime_chops": [64.0, 65.5],
+    "plating": [71.0, 93.0],
+    "tortilla_plate": 71.5,
+    "beef_plate": 74.0,
+    "onion_plate": 77.0,
+    "cilantro_plate": 79.0,
+    "salsa": { "enter": 81.5, "pour": [82.5, 87.0], "exit": 89.0 },
+    "lime_squeeze": [89.5, 92.5],
+    "hero": 95.0,
+    "done": 98.0,
+    "card": 102.0
+  },
+  "recipe": {
+    "ingredients": [
+      ["牛肉条", "Beef strips", "300 g"],
+      ["玉米饼", "Corn tortillas", "6 张"],
+      ["白洋葱", "White onion", "1/2 个"],
+      ["香菜", "Cilantro", "一小把"],
+      ["青柠", "Lime", "2 个"],
+      ["萨尔萨酱", "Salsa", "3 tbsp"],
+      ["食用油", "Oil", "1 tbsp"],
+      ["盐胡椒", "Salt & pepper", "适量"]
+    ],
+    "steps": [
+      ["空铸铁盘中火加热", "Heat empty comal over medium"],
+      ["倒少许油，下牛肉煸至焦香约4–5分钟", "Oil first; sear beef 4–5 min until browned"],
+      ["玉米饼两面各热20–30秒", "Warm tortillas 20–30 s per side"],
+      ["切洋葱丁、香菜；青柠横切见果肉", "Dice onion & cilantro; cross-cut lime"],
+      ["饼→肉→洋葱香菜→淋萨尔萨→挤青柠", "Tortilla · beef · onion/cilantro · salsa · lime"]
+    ]
+  }
+}
