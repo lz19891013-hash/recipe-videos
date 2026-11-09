@@ -1,0 +1,6 @@
+node_modules/
+episodes/*/build/
+lib/fonts/
+**/__pycache__/
+*.mp4
+.DS_Store
