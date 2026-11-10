@@ -1,0 +1,94 @@
+{
+  "episode": 20,
+  "slug": "ep20-butter-chicken",
+  "dish": {
+    "zh": "印度黄油鸡",
+    "en": "Butter Chicken",
+    "cuisine": "印度 Indian",
+    "time": "约 40 min（含备料）",
+    "servings": "3"
+  },
+  "style": {
+    "visual": "stained-glass-3d (Three.js jewel translucent panes + dark lead came edges + backlight glow + grisaille accents; lemo-opuscar stained-glass; true 3D volume kitchen diorama, no 2D Path2D window cheat, secular)",
+    "music": "medieval-hall organum kitchen (~84 BPM Mixolydian: soft organ pedal drone + harp arpeggios + hand chimes + water-glass notes + light timpani; NOT afrobeat/lo-fi/funk UI ding/toy-piano/marimba/Rhodes/indie-pop jangle/Mediterranean nylon+oud/riq/Gershwin foxtrot/sunny pastorale/cumbia/chiptune/jazz swing)"
+  },
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "duration": 120.0,
+  "steps": [
+    { "n": 1, "zh": "空锅热黄油", "en": "Heat pan · melt butter", "start": 3.5, "end": 18.0 },
+    { "n": 2, "zh": "下洋葱蒜姜", "en": "Onion · garlic · ginger", "start": 18.0, "end": 34.0 },
+    { "n": 3, "zh": "煸香料", "en": "Toast the spices", "start": 34.0, "end": 48.0 },
+    { "n": 4, "zh": "倒入番茄泥", "en": "Pour tomato puree", "start": 48.0, "end": 64.0 },
+    { "n": 5, "zh": "奶油下鸡煮熟", "en": "Cream · chicken · cook through", "start": 64.0, "end": 94.0 },
+    { "n": 6, "zh": "装盘上桌", "en": "Plate and serve", "start": 94.0, "end": 110.0 }
+  ],
+  "callouts": [
+    { "t0": 3.8, "t1": 7.5, "zh": "平底深锅", "en": "Deep skillet", "amt": "中火 · med heat", "kind": "ing", "color": "#D4A017" },
+    { "t0": 7.8, "t1": 10.5, "zh": "先热空锅", "en": "Heat the empty pan", "amt": "", "kind": "act" },
+    { "t0": 10.8, "t1": 17.2, "zh": "黄油块入锅融化", "en": "Butter blocks melt", "amt": "40 g · 3 tbsp", "kind": "ing", "color": "#D4A017" },
+    { "t0": 18.2, "t1": 22.0, "zh": "洋葱", "en": "Onion", "amt": "1 个 · 1 pc", "kind": "ing", "color": "#6B2D5C" },
+    { "t0": 22.2, "t1": 26.5, "zh": "大蒜与姜", "en": "Garlic & ginger", "amt": "4 瓣 + 15 g", "kind": "ing", "color": "#C4A050" },
+    { "t0": 27.0, "t1": 33.2, "zh": "炒软约五分钟", "en": "Sauté until soft ~5 min", "amt": "约 5 min", "kind": "act" },
+    { "t0": 34.5, "t1": 40.5, "zh": "综合香料", "en": "Garam masala & spices", "amt": "各 1 tsp", "kind": "ing", "color": "#D4A017" },
+    { "t0": 41.0, "t1": 47.0, "zh": "煸至冒香", "en": "Toast until fragrant", "amt": "约 1 min", "kind": "act" },
+    { "t0": 49.0, "t1": 55.5, "zh": "番茄泥", "en": "Tomato puree", "amt": "200 ml", "kind": "ing", "color": "#9B1B2E" },
+    { "t0": 56.0, "t1": 63.0, "zh": "番茄小火收浓", "en": "Tomato simmer thicken", "amt": "约 8–10 min", "kind": "act" },
+    { "t0": 65.0, "t1": 71.0, "zh": "淡奶油", "en": "Heavy cream", "amt": "120 ml", "kind": "ing", "color": "#C4B8A4" },
+    { "t0": 73.5, "t1": 79.0, "zh": "鸡腿肉块", "en": "Chicken thighs", "amt": "400 g", "kind": "ing", "color": "#C45A28" },
+    { "t0": 79.5, "t1": 85.5, "zh": "恢复微沸小火煮", "en": "Return to gentle simmer", "amt": "随块大小", "kind": "act" },
+    { "t0": 86.0, "t1": 93.0, "zh": "测温中心≥74°C", "en": "Thickest ≥74°C/165°F", "amt": "未达继续煮", "kind": "act" },
+    { "t0": 94.8, "t1": 99.0, "zh": "米饭", "en": "Cooked rice", "amt": "3 份 · 3 servings", "kind": "ing", "color": "#D4A017" },
+    { "t0": 99.2, "t1": 104.0, "zh": "浇上黄油鸡酱", "en": "Spoon the SAUCE", "amt": "", "kind": "act" },
+    { "t0": 104.5, "t1": 109.0, "zh": "香菜点缀", "en": "Cilantro", "amt": "少许", "kind": "ing", "color": "#2F6B4F" }
+  ],
+  "ev": {
+    "ignite": 4.0,
+    "pan_heat": [4.0, 9.2],
+    "butter": { "enter": 9.0, "drop": [9.6, 11.4], "melt": [11.0, 16.8], "exit": 18.0 },
+    "onion_drop": { "start": 19.0, "gap": 0.09, "count": 16, "fall": 0.28 },
+    "garlic_drop": { "start": 22.5, "gap": 0.12, "count": 6, "fall": 0.26 },
+    "ginger_drop": { "start": 24.8, "gap": 0.12, "count": 5, "fall": 0.26 },
+    "stir1": [20.5, 33.5],
+    "spices": { "start": 35.0, "gap": 0.10, "count": 18 },
+    "stir2": [36.5, 47.5],
+    "tomato": { "enter": 48.5, "pour": [49.5, 56.0], "exit": 58.5 },
+    "stir3": [56.5, 63.5],
+    "cream": { "enter": 64.5, "pour": [65.5, 71.0], "exit": 73.0 },
+    "chicken_drop": { "start": 73.5, "gap": 0.09, "count": 12, "fall": 0.32 },
+    "stir4": [75.0, 84.0],
+    "simmer": [75.0, 90.5],
+    "thermometer": { "enter": 84.8, "read": [86.0, 92.0], "exit": 93.5 },
+    "plating": [94.5, 109.5],
+    "rice_plate": 95.0,
+    "sauce_boat": { "enter": 97.8, "pour": [98.5, 102.2], "exit": 104.2 },
+    "chicken_plate": 101.2,
+    "garnish": 105.0,
+    "hero": 107.5,
+    "done": 109.5,
+    "card": 111.0
+  },
+  "recipe": {
+    "ingredients": [
+      ["鸡腿肉", "Chicken thighs", "400 g"],
+      ["黄油", "Butter", "40 g"],
+      ["洋葱", "Onion", "1 个"],
+      ["大蒜", "Garlic", "4 瓣"],
+      ["姜", "Ginger", "15 g"],
+      ["番茄泥", "Tomato puree", "200 ml"],
+      ["淡奶油", "Heavy cream", "120 ml"],
+      ["香料", "Garam masala & spices", "各 1 tsp"],
+      ["米饭", "Cooked rice", "3 份"],
+      ["香菜", "Cilantro", "少许"]
+    ],
+    "steps": [
+      ["空锅中火加热，黄油块入锅融化后再下料", "Heat empty pan; melt butter blocks first"],
+      ["下洋葱、蒜、姜炒软约 5 分钟", "Sauté onion, garlic, ginger ~5 min"],
+      ["下综合香料、孜然、姜黄、辣椒粉煸香约 1 分钟", "Toast garam masala, cumin, turmeric, chili ~1 min"],
+      ["倒入番茄泥，小火收浓约 8–10 分钟（此阶段尚未下鸡）", "Tomato puree; simmer 8–10 min (no chicken yet)"],
+      ["倒入淡奶油，下鸡块；恢复微沸小火煮至熟，时间随块大小；食品温度计测最厚块中心≥74°C/165°F，未达继续煮", "Add cream & chicken; gentle simmer until thickest center ≥74°C/165°F"],
+      ["盛米饭，浇酱摆鸡，撒香菜即可", "Rice, SAUCE, chicken, cilantro"]
+    ]
+  }
+}

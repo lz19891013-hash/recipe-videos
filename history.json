@@ -1,0 +1,46 @@
+{
+  "rotation": {
+    "material": ["clay", "low-poly", "toon-outline", "neon", "paper-craft", "realistic", "felt", "glass", "voxel", "art-deco-3d", "impasto-3d", "silkscreen-poster-3d", "stained-glass-3d"],
+    "music_styles": ["lo-fi", "funk", "indie-pop", "mediterranean", "afrobeat", "bossa", "symphonic-jazz-foxtrot", "sunny-indoor-studio-pastorale", "latin-cumbia-street-band", "medieval-hall-organum-kitchen"]
+  },
+  "episodes": [
+    {
+      "n": 17,
+      "slug": "ep17-french-onion-soup",
+      "dish": "法式洋葱汤 French Onion Soup",
+      "style": "art-deco-3d",
+      "music": "1920s–30s symphonic jazz / Gershwin foxtrot",
+      "status": "in-progress-v3-recipe-card",
+      "publish": false
+    },
+    {
+      "n": 18,
+      "slug": "ep18-mango-pomelo-sago",
+      "dish": "港式杨枝甘露 Mango Pomelo Sago",
+      "style": "impasto-3d",
+      "music": "sunny indoor studio pastorale (~94 BPM, G major)",
+      "status": "in-progress-v2-round1-fixes",
+      "publish": false
+    },
+    {
+      "n": 19,
+      "slug": "ep19-street-tacos",
+      "dish": "墨西哥街头玉米卷 Mexican Street Tacos",
+      "style": "silkscreen-poster-3d",
+      "music": "Latin cumbia street band (~100 BPM)",
+      "status": "in-progress-v2-round2",
+      "publish": false,
+      "notes": "v2 第1轮两项视觉阻断：牛肉改为不规则细长肉条（肉纹/焦边/生熟）；STEP6 成品锁在安全构图并稳停2–3秒。v1 音轨 -c:a copy 进 v2。不发布。"
+    },
+    {
+      "n": 20,
+      "slug": "ep20-butter-chicken",
+      "dish": "印度黄油鸡 Butter Chicken",
+      "style": "stained-glass-3d",
+      "music": "medieval-hall organum kitchen (~84 BPM Mixolydian)",
+      "status": "in-progress-v2-r1-blockers",
+      "publish": false,
+      "notes": "v2：食安测温≥74°C；黄油块融化；不规则鸡块+连续酱+米粒；不发布。"
+    }
+  ]
+}
