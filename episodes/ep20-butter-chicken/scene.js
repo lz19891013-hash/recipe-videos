@@ -433,10 +433,11 @@ function makeChickenChunk(i, scale = 1) {
     fiber.rotation.y = Math.PI / 2;
     g.add(fiber);
   }
-  // slight sear edge ring on cut perimeter
-  const cutRim = mesh(new THREE.TorusGeometry(cutR * 0.92, 0.0025, 4, 16), foodMat('#C07058', { glow: 0.02 }));
-  cutRim.position.copy(cut.position); cutRim.rotation.copy(cut.rotation);
-  g.add(body, lobe, lobe2, cut, cutRim);
+  // sear tint band on cut (flat, NOT a metal torus ring)
+  const sear = mesh(new THREE.CircleGeometry(cutR * 0.98, 14), foodMat('#C07058', { glow: 0.015, shininess: 6 }));
+  sear.position.copy(cut.position); sear.rotation.copy(cut.rotation);
+  sear.position.x -= 0.0015;
+  g.add(body, lobe, lobe2, sear, cut);
   g.userData = { body, lobe, lobe2, cut, sx, sy, sz };
   return g;
 }
