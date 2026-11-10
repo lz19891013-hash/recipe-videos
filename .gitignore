@@ -1,0 +1,4 @@
+node_modules/
+episodes/*/build/
+*.mp4
+.DS_Store
